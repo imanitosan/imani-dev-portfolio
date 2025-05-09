@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Imani.dev{% endblock %}
+
+{% block content %}
+<section class="space-y-8">
+    <div>
+      <h2 class="text-2xl font-semibold">Portfolio Website</h2>
+      <p class="text-gray-400">
+        A personal portfolio built with Flask and Tailwind CSS, deployed on Render.
+      </p>
+      <a href="#" class="underline text-cmdgreen">View project →</a>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-semibold">CyberSec Toolkit</h2>
+      <p class="text-gray-400">
+        A Python-based CLI tool for scanning and information gathering (coming soon).
+      </p>
+      <a href="https://github.com/imanitosan/imani-dev-portfolio" class="underline text-cmdgreen">View GitHub →</a>
+    </div>
+
+    <div class="flex justify-between item-center ">
+      <div class="bg-[#0F0F0F] border border-cmdgreen rounded-xl p-4 shadow-lg transition hover:scale-105">
+        <h3 class="text-cmdgreen text-xl font-bold">Project Title</h3>
+        <p class="text-gray-300 text-sm mt-2">Short description about the project goes here.</p>
+        <a href="https://github.com/yourusername/project" target="_blank" class="text-sm text-blue-400 hover:underline mt-3 inline-block">View on GitHub</a>
+      </div>
+
+      <div class="bg-[#0F0F0F] border border-cmdgreen rounded-xl p-4 shadow-lg transition hover:scale-105">
+        <h3 class="text-cmdgreen text-xl font-bold">Project Title</h3>
+        <p class="text-gray-300 text-sm mt-2">Short description about the project goes here.</p>
+        <a href="https://github.com/yourusername/project" target="_blank" class="text-sm text-blue-400 hover:underline mt-3 inline-block">View on GitHub</a>
+      </div>
+
+      <div class="bg-[#0F0F0F] border border-cmdgreen rounded-xl p-4 shadow-lg transition hover:scale-105">
+        <h3 class="text-cmdgreen text-xl font-bold">Project Title</h3>
+        <p class="text-gray-300 text-sm mt-2">Short description about the project goes here.</p>
+        <a href="https://github.com/yourusername/project" target="_blank" class="text-sm text-blue-400 hover:underline mt-3 inline-block">View on GitHub</a>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <a href="/" class="block mt-10 underline">← Back to Home</a>
+{% endblock %}
