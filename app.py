@@ -1,5 +1,5 @@
 from email.mime import application
-from flask import Flask, render_template, request
+from flask import Flask, redirect, render_template, request
 
 
 
@@ -29,6 +29,15 @@ def contact():
         print(f"Message from {name} ({email}): {message}")
         return render_template("contact.html", success=True)
     return render_template("contact.html", success=False)
+
+
+# Force HTTPS in production
+@app.before_request
+def force_https():
+    if not request.is_secure and request.headers.get('X-Forwarded-Proto') == 'http':
+        return redirect(request.url.replace('http://', 'https://', 1))
+
+# Your existing routes here.............
 
 
 if __name__ == "__main__":
